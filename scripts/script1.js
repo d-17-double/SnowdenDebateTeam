@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Simple validation logic
     if (username === 'snowden' && password === 'snowden') {
         // Successful login, redirect to dashboard page
-        window.location.href = 'pages\dashboard.html';  // Redirect to dashboard page
+        window.location.href = 'pages/dashboard.html';  // Redirect to dashboard page
     } else {
         //  show error message
         errorMessage.textContent = 'Invalid username or password.';
@@ -27,7 +27,7 @@ document.addEventListener('keydown', function(event) {
 
     // If Enter is pressed twice in quick succession, go to the dashboard page
     if (enterKeyPressCount === 2) {
-      window.location.href = 'pages\dashboard.html';  // Redirect to dashboard
+      window.location.href = 'pages/dashboard.html';  // Redirect to dashboard
     }
   }
 });
@@ -41,7 +41,7 @@ document.body.addEventListener('touchstart', function(event) {
 
   // If the screen is tapped 3 times in quick succession, go to the dashboard
   if (tapCount === 3) {
-    window.location.href = 'pages\dashboard.html';  // Redirect to dashboard
+    window.location.href = 'pages/dashboard.html';  // Redirect to dashboard
   }
 
   // Reset the counter if no third tap within 500ms
