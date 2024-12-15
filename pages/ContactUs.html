@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Snowden Debate Team</title>
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Snowden Debate Team Contact Form</h1>
+		<nav class="logout" ><a href="index.html">Logout</a></nav>
+       
+		 <nav>
+        
+	 <a href="pages\dashboard.html">Home</a>
+	  <a href="pages\UpcomingSchedule.html">Upcoming Schedule</a>
+		<a href="pages\CurrentRoster.html">Roster</a>
+    </nav>
+		<p>Contact Us</p>
+    </header>
+	
+ <form action="https://webdevbasics.net/scripts/demo.php" method="post" class="Form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required placeholder="name@email.com">
+        
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required
+                   placeholder="999-999-9999" 
+                   title="Format: 999-999-9999">
+        
+            <label for="contact-method">Preferred Contact:</label>
+            <select id="contact-method" name="contact-method">
+                <option value="email" selected>Email me</option>
+                <option value="Text me">Text me</option>
+             
+            </select>
+        
+            <label for="question">Say Hello :)</label>
+            <textarea id="question" name="question" rows="4" cols="10"></textarea>
+        
+            <input type="submit" value="Send">
+        </form>
+	<footer><p>&copy; 2024 Snowden Debate Team</p></footer>
+
+	</body>
+
+</html>

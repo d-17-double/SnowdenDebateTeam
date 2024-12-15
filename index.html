@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css\styles.css">  
+	</head>	
+<body class="home">
+
+    <div class="login-page">
+        <h2>Login</h2>
+
+        <!-- Login Form -->
+        <form id="loginForm" action="#" method="POST">
+            <div class="error" id="error-message"></div>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+
+        <div class="forgot-password">
+           <a href="pages\PasswordInformationPage.html">
+    <p>Do Not Know Password?</p>
+    <p>Click Here</p>
+</a>
+
+        </div>
+  
+        <!-- Weather Display -->
+		<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-f493b3c5-7144-49d7-a874-d90f1c9f21f3" data-elfsight-app-lazy></div>
+
+        <div id="demo"></div>
+
+    </div> 
+
+    <!-- Link to external JavaScript files -->
+    <script src="scripts\script.js"></script>
+    <script src="scripts\script1.js"></script>
+
+</body>
+</html>
+

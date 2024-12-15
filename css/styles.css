@@ -1,0 +1,651 @@
+/* This website is created for the snowden debate high school team. The main colors for this wesbite is 
+gold(#ffe44a), white (#FFFFFF) and, green (##006400). 
+
+There will be a login in page that will be handle events using javascript. 
+Every webpage will have a log-out button and navgations links to link back to every page. */
+
+
+/* Index CSS  */
+.LoginBody {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/* Centered login  */
+.login-page {
+    background-color: white;
+	justify-content: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+/* Form input CSS */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #006400;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #006400;
+}
+
+/* Error message css */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Time and Weather CSS */
+.time-weather {
+    margin-top: 20px;
+    color: #006400;
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: #006400;
+}
+
+/* css animation for the login page */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard CSS */
+
+
+.dashboard-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+
+
+.logout ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logout ul li {
+    margin: 0 15px;
+}
+
+.logout ul li a {
+    color: gold; 
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.logout ul li a:hover {
+    color: white; 
+}
+
+
+body {
+    padding-top: 50px; 
+}
+
+
+.logout-button {
+    background-color: gold;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.home { 
+	background-color: #006400;
+	display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;            
+    margin: 0;}
+
+.-button:hover {
+    background-color: #e94e2d;
+}
+
+/*Dashboard CSS */
+.DashboardPage{font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 0;}
+
+.DashboardHeader{background-color: #006400; 
+            color: white;
+            text-align: center;
+            padding: 30px 0;}
+.DashboardFooter{text-align: center;
+            background-color: #006400;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;}
+  .content {
+            text-align: center;
+            padding: 40px;
+            font-size: 24px;
+        }
+
+    
+   nav {
+            text-align: center;
+            background-color: #ffe44a; 
+            padding: 10px 0;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #006400; 
+            color: white;
+        }
+
+.DashboardH1{font-size: 36px;}
+
+.SnowdenPic{   display: flex;              
+    justify-content: center;    
+    align-items: center;        
+	width: auto;
+	height: auto
+
+    ;} 
+.logout{ background-color: #ffe44a;
+            color: #006400; 
+            font-size: 18px;
+            padding: 10px 20px;
+            border: medium;
+            border-radius: 5px;
+	border-color: black;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+ position: fixed; 
+            top: 20px; 
+            right: 20px; }
+
+/* Roster Page CSS  */
+
+
+
+.Roster {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    background-color: #FFFFFF; 
+    margin: 0;
+}
+
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF; 
+}
+
+
+header {
+    width: 100%;
+    height: 8%;
+    background-color: #006400; 
+    border-bottom: 1px solid #353635;
+}
+
+.logo {
+    color: white; 
+    font-weight: bold;
+    margin-left: auto;
+    letter-spacing: 4px;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 15px;
+    line-height: 2em;
+    font-size: 22px;
+}
+
+.hero_header {
+    color: #FFD700; 
+    text-align: center;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+.text_column {
+    width: 90%;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 25px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.gallery {
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    background-color: #FFFFFF; 
+    padding-bottom: 35px;
+    padding-top: 5px;
+	padding-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.thumbnail {
+    width: 23%;
+    text-align: center;
+    float: left;
+    margin-top: 35px;
+    background-color: #006400;
+    padding-bottom: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 3px;
+    
+    border-bottom: 4px solid #006400; 
+}
+
+.thumbnail h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #FFD700; 
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.thumbnail p {
+    margin: 0;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 20px;
+}
+.tag{
+background-color: #ffd700}
+
+
+
+.intro {
+    background-color: #006400; 
+    padding-bottom: 35px;
+}
+
+
+
+.intro .column h3 {
+    color: #FFD700;
+    text-align: center;
+}
+
+.intro .column p {
+    color: #FFFFFF; 
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 200px;
+    opacity: 0.8;
+}
+
+.intro .column p {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    line-height: 25px;
+    font-weight: lighter;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 80%;
+    margin-top: 4%;
+}
+
+
+.button {
+    width: 200px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 3px solid #FFD700; 
+    color: #FFD700; 
+    transition: all 0.3s linear;
+}
+
+.button:hover {
+    background-color: #006400; 
+    color: #FFD700; 
+    cursor: pointer;
+}
+
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #006400; 
+    color: #FFFFFF; 
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    border-top-width: 2px;
+}
+
+/* Footer */
+.Croster {
+    background-color: #006400; 
+    padding-top: 60px;
+    padding-bottom: 60PX;
+}
+
+.profile {
+    width: 50%;
+}
+
+.gallery .thumbnail .tag {
+    color: #5D5E5D;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav {
+            text-align: center;
+            background-color: #ffe44a;
+            padding: 10px 0;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #006400; 
+            color: white;
+        }
+
+
+
+/*Upcoming Schedule CSS   */
+
+video {
+    margin-top: 20px;
+    border: 5px solid darkgreen;
+    border-radius: 10px;
+}
+
+.Footer-US{
+    background-color: #006400; 
+    padding-top: 60px;
+    padding-bottom: 60PX;
+}
+
+.Up {background-color: #006400;
+}
+
+
+/*Contact Us Page CSS */
+
+.Form
+{margin-bottom: auto}
+
+
+
+
+
+/* Password Information Page CSS  */
+
+.password_body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+
+.welcome-message {
+    background-color: #006400; 
+    color: white;
+    border-radius: 15px;
+    padding: 50px;
+    width: 70%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Heading with Animation */
+.welcome1 {
+    font-size: 3em;
+    color: gold;
+    animation: moveText 4s linear infinite;
+}
+
+
+.Enter {
+    font-size: 1.5em;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 20px;
+}
+
+.Enter span {
+    color: gold;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Button CSS */
+.info {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: gold;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info:hover {
+    background-color: #ffcc00;
+}
+
+
+/*The next set of CSS code is for mobile viewing devices */
+
+@media screen and (min-width: 750px) {
+    /* Login Page */
+    .login-page {
+        width: 400px;
+        padding: 50px;
+    }
+
+   
+    input {
+        font-size: 16px;
+    }
+
+    /* Dashboard */
+    .dashboard-container {
+        width: 600px;
+        padding: 50px;
+    }
+
+    .logout ul li {
+        margin: 0 25px;
+    }
+
+    .home {
+        height: 100vh;
+    }
+
+    /* Nav link for every page */
+    nav {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    /* Roster Page */
+    .container {
+        width: 80%;
+    }
+
+    .gallery .thumbnail {
+        width: 22%;
+    }
+
+    .intro .column p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .button {
+        width: 250px;
+    }
+
+    /* Contact Us Page */
+    .Form {
+        margin-bottom: 30px;
+    }
+
+    /* Password Info Page */
+    .welcome-message {
+        width: 60%;
+        padding: 60px;
+    }
+
+    .Enter {
+        font-size: 2em;
+    }
+
+    /* Button Styling */
+    .info {
+        padding: 20px 40px;
+        font-size: 1.4em;
+    }
+
+    /* Snowden Picture */
+    .SnowdenPic {
+        width: 60%;
+        height: auto;
+    }
+}
+
