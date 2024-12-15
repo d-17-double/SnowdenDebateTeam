@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Simple validation logic
     if (username === 'snowden' && password === 'snowden') {
         // Successful login, redirect to dashboard page
-        window.location.href = 'pages/dashboard.html';  // Redirect to dashboard page
+        window.location.href = 'pagess/dashboard.html';  // Redirect to dashboard page
     } else {
         //  show error message 
         errorMessage.textContent = 'Invalid username or password.';
