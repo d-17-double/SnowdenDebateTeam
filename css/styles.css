@@ -614,15 +614,21 @@ video {
     }
 
     /* Snowden Picture */
-   .SnowdenPic {
-        width: 100%;  
-        height: auto; 
-    }
+ .SnowdenPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    height: auto;  
+    overflow: hidden;  
+}
 
-    .SnowdenPic img {
-        max-width: 100%;  
-        height: auto;     
-    }
+.SnowdenPic img {
+    max-width: 600px;  
+    width: 100%;       
+    height: auto;    
+    object-fit: contain; 
+}
 
     /* Dashboard Footer */
     .DashboardFooter {
