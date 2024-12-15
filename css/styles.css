@@ -198,7 +198,8 @@ body {
             color: white;
         }
 
-.DashboardH1{font-size: 36px;}
+.DashboardH1{font-size: 36px;
+	    padding-top: 20px;}
 
 .SnowdenPic{   display: flex;              
     justify-content: center;    
