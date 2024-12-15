@@ -580,17 +580,48 @@ video {
     }
 
     /* Dashboard */
-    .dashboard-container {
-        width: 600px;
-        padding: 50px;
+    .DashboardHeader {
+        padding: 20px 0;
     }
 
-    .logout ul li {
-        margin: 0 25px;
+    .DashboardH1 {
+        font-size: 28px; 
     }
 
-    .home {
-        height: 100vh;
+    /* Content Section */
+    .content {
+        padding: 20px;  
+        font-size: 20px;  
+    }
+
+    /* Navigation */
+    nav {
+        padding: 8px 0; 
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 0 10px;  
+        padding: 8px;   
+    }
+
+    /* Logout Button */
+    .logout {
+        font-size: 16px; 
+        padding: 8px 15px; 
+        top: 15px;   
+        right: 15px;
+    }
+
+    /* Snowden Picture */
+    .SnowdenPic {
+        width: 100%;  
+        height: auto;  
+    }
+
+    /* Dashboard Footer */
+    .DashboardFooter {
+        padding: 15px 0;  
     }
 
     /* Nav link for every page */
@@ -612,7 +643,7 @@ video {
     }
 
     .container {
-        width: 95%;  /* Increase width to make use of screen space */
+        width: 95%;  
         margin-left: auto;
         margin-right: auto;
         background-color: #FFFFFF;
@@ -620,7 +651,7 @@ video {
 
     header {
         width: 100%;
-        height: 10%;  /* Slightly increased for better usability */
+        height: 10%; 
         background-color: #006400;
         border-bottom: 1px solid #353635;
     }
@@ -629,29 +660,29 @@ video {
         color: white;
         font-weight: bold;
         margin-left: auto;
-        letter-spacing: 2px; /* Reduced letter-spacing for smaller screens */
+        letter-spacing: 2px; 
         margin-right: auto;
         text-align: center;
-        padding-top: 10px;  /* Reduced padding for smaller screens */
-        font-size: 20px; /* Adjust font size for smaller screens */
+        padding-top: 10px;  
+        font-size: 20px; 
     }
 
     .hero_header {
         color: #FFD700;
         text-align: center;
         margin: 0;
-        letter-spacing: 2px;  /* Reduced letter-spacing for smaller screens */
+        letter-spacing: 2px;  
     }
 
     .text_column {
-        width: 100%;  /* Set to full width */
+        width: 100%;  
         text-align: left;
         font-weight: lighter;
         line-height: 20px;
-        padding-left: 15px;  /* Reduce padding */
-        padding-right: 15px;  /* Reduce padding */
+        padding-left: 15px; 
+        padding-right: 15px;  
         color: #ffffff;
-        font-size: 14px;  /* Reduced font size for readability */
+        font-size: 14px; 
     }
 
     .gallery {
@@ -666,7 +697,7 @@ video {
     }
 
     .thumbnail {
-        width: 45%;  /* Increase thumbnail size on mobile */
+        width: 45%;  
         text-align: center;
         margin-top: 20px;
         background-color: #006400;
@@ -710,7 +741,7 @@ video {
     .cards {
         width: 100%;
         height: auto;
-        max-width: 350px;  /* Smaller card size */
+        max-width: 350px; 
         max-height: 200px;
         opacity: 0.8;
     }
@@ -728,7 +759,7 @@ video {
     }
 
     .button {
-        width: 180px;  /* Smaller button on mobile */
+        width: 180px;  
         margin-top: 20px;
         margin-right: auto;
         margin-bottom: auto;
@@ -769,12 +800,12 @@ video {
     /* Footer */
     .Croster {
         background-color: #006400;
-        padding-top: 40px;  /* Reduced padding */
-        padding-bottom: 40px;  /* Reduced padding */
+        padding-top: 40px;  
+        padding-bottom: 40px; 
     }
 
     .profile {
-        width: 90%;  /* Use full width on mobile */
+        width: 90%;  ]
     }
 
     .gallery .thumbnail .tag {
@@ -795,9 +826,9 @@ video {
     nav a {
         color: #333;
         text-decoration: none;
-        margin: 0 15px;  /* Reduced margin */
-        font-size: 16px;  /* Smaller font size */
-        padding: 8px;  /* Less padding for mobile */
+        margin: 0 15px;  =
+        font-size: 16px; 
+        padding: 8px;  
         transition: background-color 0.3s;
     }
 
@@ -828,10 +859,6 @@ video {
         font-size: 1.4em;
     }
 
-    /* Snowden Picture */
-    .SnowdenPic {
-        width: auto;
-        height: auto;
-    }
+    
 }
 
