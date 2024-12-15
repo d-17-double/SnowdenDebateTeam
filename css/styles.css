@@ -604,7 +604,211 @@ video {
     }
 
     /* Roster Page */
+   @media screen and (min-width: 750px) {
+    .Roster {
+        font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+        background-color: #FFFFFF; 
+        margin: 0;
+    }
+
     .container {
+        width: 80%;  /* Adjust container width for larger screens */
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FFFFFF;
+    }
+
+    header {
+        width: 100%;
+        height: 10%;  /* Increased height for larger screens */
+        background-color: #006400;
+        border-bottom: 1px solid #353635;
+    }
+
+    .logo {
+        color: white; 
+        font-weight: bold;
+        margin-left: auto;
+        letter-spacing: 4px;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 20px; /* Increased padding */
+        line-height: 2em;
+        font-size: 28px;  /* Larger font size for better visibility */
+    }
+
+    .hero_header {
+        color: #FFD700;
+        text-align: center;
+        margin: 0;
+        letter-spacing: 6px;  /* Increased spacing for larger screens */
+    }
+
+    .text_column {
+        width: 80%;  /* Reduce width for better alignment on larger screens */
+        text-align: left;
+        font-weight: lighter;
+        line-height: 25px;
+        float: left;
+        padding-left: 30px;  /* Increase padding for larger screens */
+        padding-right: 30px;
+        color: #ffffff;
+    }
+
+    .gallery {
+        clear: both;
+        display: inline-block;
+        width: 100%;
+        background-color: #FFFFFF; 
+        padding-bottom: 50px;  /* More padding at the bottom */
+        padding-top: 20px;  /* More padding at the top */
+        margin-top: 20px;  /* Increased margin */
+        margin-bottom: 20px;
+    }
+
+    .thumbnail {
+        width: 22%;  /* Adjust thumbnail size */
+        text-align: center;
+        float: left;
+        margin-top: 35px;
+        background-color: #006400;
+        padding-bottom: 20px;
+        margin-left: 2%;  /* More spacing between thumbnails */
+        margin-right: 2%;
+        border-radius: 3px;
+        border-bottom: 4px solid #006400;
+    }
+
+    .thumbnail h4 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: #FFD700;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .thumbnail p {
+        margin: 0;
+        color: #FFFFFF;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .intro {
+        background-color: #006400;
+        padding-bottom: 50px;  /* More padding for intro */
+    }
+
+    .intro .column h3 {
+        color: #FFD700;
+        text-align: center;
+    }
+
+    .intro .column p {
+        color: #FFFFFF;
+    }
+
+    .cards {
+        width: 100%;
+        height: auto;
+        max-width: 450px;  /* Adjust card size */
+        max-height: 250px;  /* Adjust card height */
+        opacity: 0.9;  /* Slightly increased opacity */
+    }
+
+    .intro .column p {
+        padding-left: 40px;  /* Increase padding for larger screens */
+        padding-right: 40px;
+        text-align: justify;
+        line-height: 28px;  /* Increased line height */
+        font-weight: lighter;
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 75%;
+        margin-top: 4%;
+    }
+
+    .button {
+        width: 220px;  /* Slightly larger button */
+        margin-top: 50px;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        padding-top: 20px;
+        padding-right: 15px;  /* Slightly more padding */
+        padding-bottom: 20px;
+        padding-left: 15px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 0px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        border: 3px solid #FFD700; 
+        color: #FFD700; 
+        transition: all 0.3s linear;
+    }
+
+    .button:hover {
+        background-color: #006400;
+        color: #FFD700;
+        cursor: pointer;
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #006400;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        border-top-width: 2px;
+    }
+
+    /* Footer */
+    .Croster {
+        background-color: #006400;
+        padding-top: 80px;  /* Increased padding */
+        padding-bottom: 80PX;  /* Increased padding */
+    }
+
+    .profile {
+        width: 40%;  /* Adjust profile width for larger screens */
+    }
+
+    .gallery .thumbnail .tag {
+        color: #5D5E5D;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    nav {
+        text-align: center;
+        background-color: #ffe44a;
+        padding: 15px 0;  /* Increase padding */
+    }
+
+    nav a {
+        color: #333;
+        text-decoration: none;
+        margin: 0 25px;  /* Increased margin */
+        font-size: 20px;  /* Larger font size */
+        padding: 12px;  /* More padding */
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #006400;
+        color: white;
+    }
+}
+ .container {
         width: 80%;
     }
 
@@ -644,7 +848,7 @@ video {
 
     /* Snowden Picture */
     .SnowdenPic {
-        width: 60%;
+        width: auto;
         height: auto;
     }
 }
