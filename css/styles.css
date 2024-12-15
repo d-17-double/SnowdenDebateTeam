@@ -614,9 +614,14 @@ video {
     }
 
     /* Snowden Picture */
-    .SnowdenPic {
+   .SnowdenPic {
         width: 100%;  
-        height: auto;  
+        height: auto; 
+    }
+
+    .SnowdenPic img {
+        max-width: 100%;  
+        height: auto;     
     }
 
     /* Dashboard Footer */
